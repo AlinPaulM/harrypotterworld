@@ -111,6 +111,13 @@ a:hover{
     width: 25%;
 }
 
+.character-links {
+    width: 50%;
+    float: left;
+    height: 500px;
+    line-height: 500px;
+}
+
 
 
 /* clouds effect TOP */

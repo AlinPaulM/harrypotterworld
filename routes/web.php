@@ -17,6 +17,9 @@ use App\Http\Controllers\CharactersController;
 Route::get('/', function () {
     return view('homepage');
 });
+Route::get('/marauder', function () {
+    return view('marauder.marauder');
+});
 
 // Route::get('/all', [CharactersController::class, 'all']);
 Route::controller(CharactersController::class)->group(function () {

@@ -35,7 +35,7 @@
     <p>Actor: {{$char->wizard ? $char->actor : '-'}}</p>
     <p>Alive: {{$char->alive ? 'yes' : 'no'}}</p>
 </div>
-<div class="character-links">
-
+<div class="character-links text-center">
+    <a href="/marauder">Feeling lost?</a>
 </div>
 @include('footer')
