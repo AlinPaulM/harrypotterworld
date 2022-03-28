@@ -7,7 +7,7 @@
         <title>Harry Potter World</title>
 
         <!-- Fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Yusei Magic' rel='stylesheet'>
+        <!-- <link href='https://fonts.googleapis.com/css?family=Yusei Magic' rel='stylesheet'> -->
         
         <!-- Styles -->
         <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" >
