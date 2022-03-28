@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CharactersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('homepage');
+});
+
+// Route::get('/all', [CharactersController::class, 'all']);
+Route::controller(CharactersController::class)->group(function () {
+    Route::get('/all', 'all');
+    Route::get('/all/{id}', 'all');
+    Route::get('/students', 'students');
+    Route::get('/students/{id}', 'students');
+    Route::get('/staff', 'staff');
+    Route::get('/staff/{id}', 'staff');
+    Route::get('/house/{house}', 'house');
+    Route::get('/house/{house}/{id}', 'house');
+    Route::get('/houses', 'houses');
 });

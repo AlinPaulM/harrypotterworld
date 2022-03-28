@@ -1,0 +1,4 @@
+-to install the latest version of laravel, make sure your pc(your terminal) is set up to use the php version required by the latest version of laravel(otherwise you will not get the latest version of laravel)
+-install laravel using composer, run "composer create-project laravel/laravel my-app"
+-to run the app navigate to the project folder and run "php artisan serve"
+-p.s. in case the API will no longer be available in the future, i made a backup of all of its data, and i can do the modifications so it uses the local data - see the "resources/api-data-backup" folder
