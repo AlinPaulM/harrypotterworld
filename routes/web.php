@@ -33,3 +33,7 @@ Route::controller(CharactersController::class)->group(function () {
     Route::get('/house/{house}/{id}', 'house');
     Route::get('/houses', 'houses');
 });
+
+Route::get('/templates', function(){
+    return view('child');
+});
