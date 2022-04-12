@@ -37,3 +37,9 @@ Route::controller(CharactersController::class)->group(function () {
 Route::get('/templates', function(){
     return view('child');
 });
+
+Route::get('/cs', function(){
+    return view('components-and-slots', [
+        'messageVar' => 'this is the message'
+    ]);
+});
