@@ -2,4 +2,6 @@
     {{ $message }}
     <br>
     {{ $fct(true) }}
+    <br><br>
+    {{$nonRequired}}
 </div>

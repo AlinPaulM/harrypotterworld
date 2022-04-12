@@ -7,24 +7,16 @@ use Illuminate\View\Component;
 class Alert extends Component
 {
     private bool $prvVal = true;
-
+    
 // "All public properties on a component will automatically be made available to the component's view. It is not necessary to pass the data to the view from the component's render method"
-    /**
-     * The alert type.
-     *
-     * @var string
-     */
-    public $alertType;
+    // non-required data: public properties or methods that you don't pass to the constructor
+    public $nonRequired = 'non required property';
 
-    /**
-     * The alert message.
-     *
-     * @var string
-     */
+    public $alertType;
     public $message;
     
 // the constructor contains the component's REQUIRED data (it HAS to be public properties)
-// p.s. (you can also use protected/private ones, BUT you must pass the data to the view in render(), which is not how components are meant to be used i'd say, so don't do that)
+    // (p.s. you can also use protected/private ones, BUT you must pass the data to the view in render(), which is not how components are meant to be used most likely, so don't do that)
     /**
      * Create a new component instance.
      *
@@ -37,11 +29,7 @@ class Alert extends Component
         $this->alertType = $alertType;
         $this->message = $message;
     }
-
-    /**
-     * @param  bool  $param
-     * @return string
-     */
+    
     public function fct($param)
     {
         return $param === $this->prvVal ? 'fct-yes' : 'fct-no';
