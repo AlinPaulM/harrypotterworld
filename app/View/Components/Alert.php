@@ -56,4 +56,20 @@ class Alert extends Component
     {
         return view('components.alert');
     }
+
+    /* // https://laravel.com/docs/9.x/blade#using-attributes-slots-within-component-class
+    public function render()
+    {
+        return function (array $data) {
+            // $data['componentName'];
+            // $data['attributes'];
+            // $data['slot'];
+
+            // echo '<pre>'; var_dump($data);echo '</pre>';
+            echo '<pre>' . var_export($data, true) . '</pre>';
+
+            return 'components.alert';
+        };
+    }
+    */
 }
