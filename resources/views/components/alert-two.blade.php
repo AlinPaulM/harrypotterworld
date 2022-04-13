@@ -1,3 +1,4 @@
+<p>alert-two component</p>
 <div>
-    alert-two component
+    {{$slot}}
 </div>

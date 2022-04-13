@@ -43,3 +43,6 @@ Route::get('/cs', function(){
         'messageVar' => 'this is the message'
     ]);
 });
+Route::get('cs2', function(){
+    return view('components-and-slots-2');
+});
