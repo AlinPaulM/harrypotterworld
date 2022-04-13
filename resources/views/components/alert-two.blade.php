@@ -1,5 +1,3 @@
-<p>alert-two component</p>
-
 <span class="alert-title">{{ $title }}</span> 
 <div class="alert alert-danger">
     {{ $slot }}

@@ -6,6 +6,12 @@ use Illuminate\View\Component;
 
 class AlertTwo extends Component
 {
+    public $nonRequired = "non required";
+    
+    public function fct()
+    {
+        return "fct val";
+    }
     /**
      * Create a new component instance.
      *
