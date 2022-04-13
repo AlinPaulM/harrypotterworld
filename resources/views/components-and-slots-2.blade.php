@@ -1,3 +1,7 @@
 <x-alert-two>
-    slot content
+    <x-slot:title>
+        title slot
+    </x-slot>
+    
+    <p>slot</p>
 </x-alert-two>
